@@ -337,7 +337,7 @@ to {
 			<!-- topMenu -->
 			<div>
 				<a class="topMenuLink" href="#" style="margin-left: 340px">스토어</a> <a
-					class="topMenuLink" href="#">이벤트</a> <a class="topMenuLink"
+					class="topMenuLink" href="eventPage.jsp">이벤트</a> <a class="topMenuLink"
 					href="#">후기</a> <a class="topMenuLink" href="#">Amor</a>
 			</div>
 		</div>

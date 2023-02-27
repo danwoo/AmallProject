@@ -12,7 +12,7 @@
 <script type="text/javascript" src="script.js"></script>
 <title>index</title>
 <style type="text/css">
-.container {
+#bodyContainer {
 	width: 960px;
 	margin: 20px auto;
 }
@@ -23,29 +23,28 @@
 	font-family: 'Varela Round', sans-serif;
 }
 
-/*Event tab*/
+/*Store tab*/
 .tab {
   width: 100%;
   height: 50px;
   margin-top:20px;
+  align-items: center;
 }
 
 .tablinks {
   float: left;
-  width: 30%;
-  margin-left : 125px;
+  width: auto;
+  margin-left : 200px;
   height: 100%;
   border: none;
   outline: none;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;      /*탭 비활성화된 상태의 글자색*/
-  background-color: #a6a6a6;  /*탭 비활성화된 상태의 바탕색*/
-  border-radius : 20px;
 }
+
 .tablinks:hover{
   transition:0.3s;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .tablinks.active {
@@ -53,6 +52,9 @@
   background-color: #FFD9FA; /* 탭 활성화된 상태의 바탕색 */
 }
 
+.tab .tablinks img{
+  height:100%;
+}
 .tabcontent{display:inline-block;}
 .tabcontent div{
   text-align:center;
@@ -64,8 +66,8 @@
 }
 
 .tabcontent div img{
-	width: 250px;
-	height:250px;
+	width: 125px;
+	height:125px;
 	margin : 10px;
 }
 
@@ -198,13 +200,15 @@
 		<!-- headScreenEnd -->
 
 		<!-- bodyScreenStart -->
-		<div class="container">
-		<div id="banner">
-				<h2>Event</h2>
+		<div id="bodyContainer">
+		 <div id="banner">
+				<h2>Store</h2>
 		</div>
+		
 		<div class="tab">
-		  <button class="tablinks active" onclick="openTab(event, 'tab1')">진행중인 이벤트</button>
-		  <button class="tablinks" onclick="openTab(event, 'tab2')">종료된 이벤트</button>
+		  <button class="tablinks active" onclick="openTab(event, 'tab1')"><img src="images/gift.png"><figcaption>gift</figcaption></button> <!-- button image 바꿔주세요 -->
+		  <button class="tablinks" onclick="openTab(event, 'tab2')"><img src="images/couple.png"><figcaption>couple</figcaption></button>
+		  <button class="tablinks" onclick="openTab(event, 'tab2')"><img src="images/party.png"><figcaption>party</figcaption></button>
 		</div>
 		
 		<div id="tab1" class="tabcontent">
@@ -277,6 +281,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 </script>
+		</div>
 		<!-- bodyScreenEnd -->
 
 		<!-- footScreenStart -->

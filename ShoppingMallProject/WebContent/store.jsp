@@ -56,27 +56,71 @@
   height:100%;
 }
 .tabcontent{display:inline-block;}
-.tabcontent div{
-  text-align:center;
-  width:470px;
-  height:auto;
-  float:left;
-  margin-top: 20px;
-  margin-left:10px;
+.showItem {
+	display: flex;
+	margin-top: 25px;
 }
 
-.tabcontent div img{
-	width: 125px;
-	height:125px;
-	margin : 10px;
+.itemInfor {
+	margin: 5px 14px;
+	width: 210px;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
-.tabcontent div figcaption span{
-	padding:2px;
-	font-weight:bold;
-	margin-right:80px;
-	text-align:left;
-	background-color: #FFD9FA;
+.reviewShow {
+	margin: 5px 10px;
+	width: 170px;
+	height: 117px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.itemImage>img {
+	border-radius: 5px;
+	width:208px;
+	height:auto;
+}
+
+.itemExplanation {
+	padding : 5px;
+	text-align : left;
+	margin-top:5px;
+	height: 45px;
+	display: inline;
+}
+.itemExplanation h5{
+	display:inline-block;
+}
+.itemExplanation nav{
+	float:right;
+	margin-right: 10px;
+}
+
+.itemExplanation nav button{
+	border:0;
+	background-color: transparent;
+}
+
+.itemExplanation nav button:hover{
+	border:0;
+	background-color: transparent;
+}
+
+.itemExplanation nav button img{
+	width:20px;
+	height:20px;
+}
+.itemExplanation nav button img,img-hover{
+	width:20px;
+	height:20px;
+}
+.miniContainer {
+	margin: 60px auto 60px auto;
+}
+
+.miniContainer>div>h4 {
+	font-family: 'NanumSquareAcr';
 }
 </style>
 </head>
@@ -208,63 +252,182 @@
 		<div class="tab">
 		  <button class="tablinks active" onclick="openTab(event, 'tab1')"><img src="images/gift.png"><figcaption>gift</figcaption></button> <!-- button image 바꿔주세요 -->
 		  <button class="tablinks" onclick="openTab(event, 'tab2')"><img src="images/couple.png"><figcaption>couple</figcaption></button>
-		  <button class="tablinks" onclick="openTab(event, 'tab2')"><img src="images/party.png"><figcaption>party</figcaption></button>
+		  <button class="tablinks" onclick="openTab(event, 'tab3')"><img src="images/party.png"><figcaption>party</figcaption></button>
 		</div>
 		
 		<div id="tab1" class="tabcontent">
-		  <div>
-			  <figure>
-			   <a href="#">
-			   <img alt="이벤트1" src="images/login.png">
-			   <figcaption><span>진행중</span><br>Amall 리뷰 이벤트</figcaption>
-		 	   </a>
-			  </figure>
-		  </div>
-		  <div>
-			  <figure>
-			   <a href="#">
-			   <img alt="이벤트2" src="images/login.png">
-			   <figcaption><span>진행중</span><br>Amall 오픈 이벤트</figcaption>
-			   </a>
-			  </figure>
-		  </div>
-		  <div>
-			  <figure>
-			   <a href="#">
-			   <img alt="이벤트2" src="images/login.png">
-			   <figcaption><span>진행중</span><br>Amall 오픈 이벤트</figcaption>
-			   </a>
-			  </figure>
-		  </div>
-		  <div>
-			  <figure>
-			   <a href="#">
-			   <img alt="이벤트2" src="images/login.png">
-			   <figcaption><span>진행중</span><br>Amall 오픈 이벤트</figcaption>
-			   </a>
-			  </figure>
+		  <div class="miniContainer">
+			<div class="showItem">
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw0CiLjQG0_EOVqK74N7z1KrEhYuTE8q5aA&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+					    <h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4WS5p9S5HH57FIXPv3_omSMtGV5dItOvlYemfbGYgG_0AsmJKdX7xoF-ETBjvEdtZcc&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBGFIIubsw7XlCaGqDj30bSlkRLPiuCUSUQ&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibmyJNHD2cj1wAHBcnNkl8EI9DKJTXER1Yg&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+			</div>
 		  </div>
 		</div>
-		
 		<div id="tab2" class="tabcontent">
-		  <div>
-			  <figure>
-	     	   <a href="#">
-			   <img alt="이벤트3" src="http://www.tcpschool.com/examples/images/img_flower.png">
-			   <figcaption><span style="background-color: #a6a6a6; color:#fff">종료</span>&nbsp&nbsp&nbsp<br>Amall 리뷰 이벤트</figcaption>
-			   </a>
-			  </figure>
-		  </div>
-		  <div>
-			  <figure>
-		  	   <a href="#">
-			   <img alt="이벤트4" src="images/login.png">
-			   <figcaption><span style="background-color: #a6a6a6; color:#fff">종료</span>&nbsp&nbsp&nbsp<br>Amall 오픈 이벤트</figcaption>
-			   </a>
-			  </figure>
+		  <div class="miniContainer">
+			<div class="showItem">
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw0CiLjQG0_EOVqK74N7z1KrEhYuTE8q5aA&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4WS5p9S5HH57FIXPv3_omSMtGV5dItOvlYemfbGYgG_0AsmJKdX7xoF-ETBjvEdtZcc&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBGFIIubsw7XlCaGqDj30bSlkRLPiuCUSUQ&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibmyJNHD2cj1wAHBcnNkl8EI9DKJTXER1Yg&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+			</div>
 		  </div>
 		</div>
-		
+		<div id="tab3" class="tabcontent">
+		  <div class="miniContainer">
+			<div class="showItem">
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw0CiLjQG0_EOVqK74N7z1KrEhYuTE8q5aA&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4WS5p9S5HH57FIXPv3_omSMtGV5dItOvlYemfbGYgG_0AsmJKdX7xoF-ETBjvEdtZcc&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBGFIIubsw7XlCaGqDj30bSlkRLPiuCUSUQ&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+				<div class="itemInfor">
+					<div class="itemImage">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibmyJNHD2cj1wAHBcnNkl8EI9DKJTXER1Yg&usqp=CAU">
+					</div>
+					<div class="itemExplanation">
+						<h6>GUCCI</h6>
+						<h5>Ring</h5>
+						<nav>
+							<button class="bakset"><img src="images/basket.png"></button>
+							<button class="like"><img src="images/emptyGood.png"></button>
+						</nav>
+					</div>
+				</div>
+			</div>
+		  </div>
 		</div>
 <script>
 function openTab(evt, tabName) {
